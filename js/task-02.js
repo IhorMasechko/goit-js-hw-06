@@ -1,10 +1,10 @@
-const ingredients = ['Potatoes', 'Mushrooms', 'Garlic', 'Tomatos', 'Herbs', 'Condiments'];
+// const ingredients = ['Potatoes', 'Mushrooms', 'Garlic', 'Tomatos', 'Herbs', 'Condiments'];
 
-const ulList = document.querySelector('#ingredients');
+// const ulList = document.querySelector('#ingredients');
 
-const list = ingredients.reduce((acc, item) => {
-  return acc + `<li>${item}</li>`;
-}, '');
+// const list = ingredients.reduce((acc, item) => {
+//   return acc + `<li>${item}</li>`;
+// }, '');
 
-ulList.innerHTML = list;
-console.log(ulList);
+// ulList.innerHTML = list;
+// console.log(ulList);
