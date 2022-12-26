@@ -15,12 +15,14 @@ const images = [
 
 const ulList = document.querySelector('ul.gallery');
 
-images.forEach(element => {
-  ulList.insertAdjacentHTML(
-    'afterbegin',
-    `<li><img src = "${element.url}" alt = "${element.alt}"  width = "400" height = "250" /></li>`
-  );
-});
+const addLi = images
+  .map(
+    image =>
+      `<li><img class="photo" src = "${image.url}" alt = "${image.alt}"  width = "400" height = "250" /></li>`
+  )
+  .join('');
+
+ulList.insertAdjacentHTML('afterbegin', addLi);
 
 ulList.style.display = 'flex';
 ulList.style.justifyContent = 'center';
